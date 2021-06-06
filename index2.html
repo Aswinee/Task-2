@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>JS Documentation</header>
+    <ul>
+      <a href="#Introduction" rel="internal">
+        <li>Introduction</li>
+      </a>
+      <a href="#Applications_of_Python" rel="internal">
+        <li>Applications of Python</li>
+      </a>
+      <a href="#Python_Interpreter" rel="internal">
+        <li>Python Interpreter</li>
+      </a>
+      <a href="#Python_vs_JavaScript" rel="internal">
+        <li>Python vs JavaScript</li>
+      </a>
+      <a href="#Hello_world" rel="internal">
+        <li>Hello world</li>
+      </a>
+      <a href="#Variables" rel="internal">
+        <li>Variables</li>
+      </a>
+      <a href="#Rules_for_variable_name" rel="internal">
+        <li>Rules for variable name</li>
+      </a>
+      <a href="#Variable_scope" rel="internal">
+        <li>Variable scope</li>
+      </a>
+     <a href="#Data_types" rel="internal">
+        <li>Data types</li>
+      </a>
+      <a href="#Reference" rel="internal">
+        <li>Reference</li>
+      </a>
+    </ul>
+
+  </nav>
+
+  <main id="main-doc">
+    <section id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a
+          simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing,
+          together with its interpreted nature, make it an ideal language for scripting and rapid application development
+          in many areas on most platforms.</p>
+
+        <p>The Python interpreter and the extensive standard library are freely available in source or binary form for
+          all major platforms from the Python Web site, <a href="https://www.python.org/" target="_blank">https://www.python.org/</a>
+          and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules,
+          programs and tools, and additional documentation.</p>
+
+        <p>This tutorial introduces the reader informally to the basic concepts and features of the Python language and
+          system. It helps to have a Python interpreter handy for hands-on experience, but all examples are self-contained,
+          so the tutorial can be read off-line as well.</p>
+      </article>
+    </section>
+    <section id="Applications_of_Python">
+      <header>Applications of Python</header>
+      <article>
+        <p>Python is one of the most widely used language over the web. </p>
+        <li>Portable − Python can run on a wide variety of hardware platforms and has the same interface on all platforms.
+        </li>
+        <li>Extendable − You can add low-level modules to the Python interpreter. These modules enable programmers to add to or customize their tools to be more efficient.
+        </li>
+        <li>Databases − Python provides interfaces to all major commercial databases.
+        </li>
+        <li>GUI Programming − Python supports GUI applications that can be created and ported to many system calls, libraries and windows systems, such as Windows MFC, Macintosh, and the X Window system of Unix.
+        </li>
+
+        </article>
+    </section>
+    <section id="Python_Interpreter">
+      <header>Python Interpreter</header>
+      <article>
+        <p>The Python interpreter is usually installed as /usr/local/bin/python3.9 on those machines where it is available;
+          putting /usr/local/bin in your Unix shell’s search path makes it possible to start it by typing the command:</p>
+        <code>python3.9</code>
+        <p>Since the choice of the directory where the interpreter lives is an installation option, other places are possible;
+          check with your local Python guru or system administrator. See <a href="https://docs.python.org/3/using/windows.html#setting-envvars" target="_blank">
+            Excursus: Setting environment variables</a> for other ways to launch Python.</p>
+
+        <!-- <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                        <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                        <li>Some programming experience. If you are new to programming, try one of the tutorials linked
+                            on the
+                            main
+                            page about JavaScript.
+                        </li> -->
+        </artice>
+    </section>
+    <section id="Python_vs_JavaScript">
+      <header>Python vs Javascript</header>
+      <article>
+        <p>Some of the points are explained below that shows the Differences Between Python snd JavaScript.</p>
+
+        <li>Python is strongly typed – no implicit conversion between types, whereas JavaScript is weakly typed.
+        </li>
+        <li>Python is not good for mobile development, whereas Java-Script is good.
+        </li>
+        <li>Python is good if we do data analytics, machine learning or math-intensive operations, whereas
+          JavaScript is good for building a website or native applications as it took less time for UI work.
+        </li>
+        <li>JavaScript runs on both browser and server, whereas python is mostly used for server-side programming.
+        </li>
+
+      </article>
+    </section>
+    <section id="Hello_world">
+      <header>Hello world</header>
+      <article>
+        <p>
+          Just to give you a little excitement about Python, I'm going to give you a small conventional Python Hello World program, You can try it to visualize the output</p>
+        <code>print ("Hello, Python!");</code>
+
+      </article>
+    </section>
+    <section id="Variables">
+      <header>Variables</header>
+      <p>
+        A variable is a label or a name given to a certain location in memory. This location holds the value you want your program to remember, for use later on. What's great in Python is that you do not have to explicitly state what the type of variable you want to define is - it can be of any type (string, integer, float, etc.). To create a new variable in Python, you simply use the assignment operator (=, a single equals sign) and assign the desired value to it.
+      </p><code>first_string_var = "First String" </code>
+      <p>Python has no command for declaring a variable.
+        A variable is created the moment you first assign a value to it. The right-hand side can also be an arithmetic operation - in which case, it will be evaluated before the assignment occurs. For example: </p> <code>total = 1 + 2 * 3</code>
+
+    </section>
+    <section id="Declaring_variables">
+      <header>Rules for variable name</header>
+      <article>
+
+        <p>Python has some rules that you must follow when creating a variable.</p>
+        <li>It may only contain letters (uppercase or lowercase), numbers or the underscore character _.
+        </li>
+        <li>It may not start with a number.
+        </li>
+        <li>It may not be a keyword (you will learn about them later on).
+        </li>
+        <li>Python is strongly typed – no implicit conversion between types, whereas JavaScript is weakly typed.
+        </li>
+      </article>
+    </section>
+    <section id="Variable_scope">
+      <header>Variable scope</header>
+      <article>
+        <p> Now that you know how to initialize a variable. Let's talk about the scope of these variables. Not all variables can be accessed from anywhere in a program. The part of a program where a variable is accessible is called its scope. There are four major types of variable scope and is the basis for the LEGB rule. LEGB stands for Local -> Enclosing -> Global -> Built-in.</p>
+
+      </article>
+    </section>    
+    <section id="Data_types">
+      <header>Data types</header>
+      <article>
+        <p>Python has the following data types built-in by default, in these categories:</p>
+        
+          <ul>
+            <li>Text Type:	string</li>
+            <li>Numeric Types:	int, float, complex</li>
+            <li>Sequence Types:	list, tuple, range</li>
+            <li>Mapping Type:	dictionary</li>
+            <li>Set Types:	set, frozenset</li>
+            <li>Boolean Type:	bool</li>
+            <li>Binary Types:	bytes, bytearray, memoryview</li>
+          </ul>
+        </article>
+    </section>
+
+    <section id="Reference">
+      <header>Reference</header>
+      <article>
+        All the documentation in this page are taken from: <li><a href="https://docs.python.org/3/tutorial/index.html" target="_blank">python.org</a></li><li><a href="https://www.educba.com/python-vs-javascript/" target="_blank">https://www.educba.com/python-vs-javascript/</a></li>
+<li><a href="https://www.datacamp.com/community/tutorials/scope-of-variables-python?utm_source=adwords_ppc&utm_campaignid=1455363063&utm_adgroupid=65083631748&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=278443377095&utm_targetid=dsa-429603003980&utm_loc_interest_ms=&utm_loc_physical_ms=1007804&gclid=Cj0KCQjw5PGFBhC2ARIsAIFIMNfuG1t83miCNXt76gI9hm9_XPBpxN2EqLs4N6U-_38ZvYvbhzBuSZMaAmqwEALw_wcB">Datacamp</a></li>
+        <li><a href="https://www.w3schools.com/python/python_datatypes.asp" target="_blank">https://www.w3schools.com/python/python_datatypes.asp</a>
+      </article>
+    </section> 
+  </main>
+
+</body>
+
+</html>
